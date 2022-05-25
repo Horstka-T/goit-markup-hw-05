@@ -49,7 +49,7 @@
     <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button-hero">Заказать услугу</button>
+                <button type="button" class="button-hero" data-modal-open> Заказать услугу </button>
             </div>
             </section>
 <!--Преимущества-->
@@ -105,19 +105,28 @@
                 <h3 class="section-title">Чем мы занимаемся</h3>
                 <ul class="project list activity">
                     <li class="act-item">
+                        <div class="act-type">
                         <img src="./img/hw1.jpg" alt="Верстка сайтов"
                         width="371"
                         height="294">
+                        <p class="speciality">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="act-item">
+                        <div class="act-type">
                         <img src="./img/hw2.jpg" alt="Мобильные приложения" 
                         width="371"
                         height="294">
+                        <p class="speciality">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="act-item">
+                        <div class="act-type">
                         <img src="./img/hw3.jpg" alt="WEB дизайн" 
                         width="371"
                         height="294">
+                        <p class="speciality">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -387,5 +396,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-button-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
